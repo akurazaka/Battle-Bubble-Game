@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bubbles.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Bubble Game</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: rgb(228, 228, 228);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure full viewport height */
+      }
+
+      #canvas {
+        background-color: #fff;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="1000"
+      height="600"
+      style="border: 3px solid #000000"
+    ></canvas>
+    <div id="menu-container" style="position: absolute; top: 0; left: 0"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
